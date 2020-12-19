@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# large CSV file
+city_temperature.csv
+city_temperature.csv
