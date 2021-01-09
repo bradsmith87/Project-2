@@ -2,7 +2,7 @@
 export default function define(runtime, observer) {
   const main = runtime.module();
   main.variable(observer()).define(["md"], function(md){return(
-md`# Draggable globe in D3`
+md` `
 )});
   main.variable(observer()).define(["html"], function(html){return(
 html`<div id="map" style="width: 100%;"></div>`
@@ -60,7 +60,9 @@ html`<div id="map" style="width: 100%;"></div>`
 
   let map = svg.append("g")
 
+  // d3.json("http://127.0.0.1:5000/test", function(err, d) {
   d3.json("https://raw.githubusercontent.com/michael-keith/mps_interests/master/view/js/charts/data/world_map.json", function(err, d) {
+    
     map.append("g")
       .attr("class", "countries" )
       .selectAll("path")
@@ -73,6 +75,8 @@ html`<div id="map" style="width: 100%;"></div>`
       .style('stroke-width', 0.3)
       .style("opacity",0.8)
   })
+
+
   
   //Optional rotate
   d3.timer(function(elapsed) {
