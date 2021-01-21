@@ -1,0 +1,115 @@
+<!-- Set Up-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Title & Metadata -->
+<head>
+  <meta charset="utf-8">
+  <title>Project 2</title>
+
+  <!-- Webscraping-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+  crossorigin="anonymous">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+
+  <!-- Stylesheet CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Country GeoJson -->
+  <script src="joined1.geojson" type="text/javascript"></script>
+
+  <!-- Pollution GeoJson -->
+  <script src="joined2.geojson" type="text/javascript"></script>
+
+</head>
+
+<!-- Add all content to body  -->
+<body class="body">
+  
+  <!-- HEADING -->
+  <div class="row">
+    <div class="col-2">
+    </div>
+
+    <div class="col-8">
+      <h1 class="heading">Global Temperatures</h1>
+    </div>
+
+    <div class="col-2">
+    </div>
+  </div>
+  
+  <!-- BUTTONS -->
+  <div class="row">
+    
+    <a class="air-link" href="compare.html">AIR POLLUTION</a>
+
+
+  <a class="nav-link" href="data.html">SCRAPE CURRENT WEATHER</a>
+</div>
+
+  <!-- MAP -->
+  <container class="one">
+  <div class="row">
+    <div class="col-2">
+      </div>
+
+    <div class="col-8">
+      <div id="map">
+      </div>
+
+      <div class="col-2">
+        </div>
+    </div>
+  </container>
+
+  
+
+
+
+ <!-- BUTTONS -->
+ <div class="row">
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <button onclick="update2015()" type="button" class="btn btn-secondary">2015</button>
+    <button onclick="update2016()" type="button" class="btn btn-secondary">2016</button>
+    <button onclick="update2017()" type="button" class="btn btn-secondary">2017</button>
+    <button onclick="update2018()" type="button" class="btn btn-secondary">2018</button>
+    <button onclick="update2019()" type="button" class="btn btn-secondary">2019</button>
+    <button onclick="update2020()" type="button" class="btn btn-secondary">2020</button>
+  </div>
+</div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+  integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+  crossorigin=""></script>
+
+  <!-- API key -->
+  <script type="text/javascript" src="config.js"></script>
+
+  <!-- JS -->
+  <script type="text/javascript" src="logic.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+
+
+
+<!-- Close -->
+</body>
+</html>

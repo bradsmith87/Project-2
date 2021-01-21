@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>homework web challenge</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+ 
+  <!-- Go with separate scripts solution, Popper.js must come first, and then our JavaScript plugins.-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+     
+    <!-- Create a navbar brand in the nav bar -->
+    <div class="navigation">
+      <nav class="navbar navbar-expand-lg navbar-light">
+
+        
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+              <a class="nav-link1" href="index.html">Back to homepage</a>
+            </li>
+  
+          </ul>
+        </nav>
+      </div>
+
+  <!-- Create the data content -->
+  <div class="container content">    
+    <div class="row">
+      <div class="col-md-12">
+      <h3>Temperature Data</h3>
+        
+        <table border="1" class="dataframe table table-striped table-hover">
+          <thead>
+            <tr style="text-align: left;">
+              <th>Country</th>
+              <th>Temperature</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Albania</td>
+              <td>13 °C</td>
+            </tr>
+            <tr>
+              <td>Algeria</td>
+              <td>12 °C</td>
+            </tr>
+            <tr>
+              <td>Angola</td>
+              <td>29 °C</td>
+            </tr>
+            <tr>
+              <td>Antigua and Barbuda</td>
+              <td>25 °C</td>
+            </tr>
+            <tr>
+              <td>Argentina</td>
+              <td>20 °C</td>
+            </tr>
+            <tr>
+              <td>Armenia</td>
+              <td>4 °C</td>
+            </tr>
+            <tr>
+              <td>Aruba</td>
+              <td>26 °C</td>
+            </tr>
+            <tr>
+              <td>Australia</td>
+              <td>21 °C</td>
+            </tr>
+            <tr>
+              <td>Austria</td>
+              <td>0 °C</td>
+            </tr>
+            <tr>
+              <td>Azerbaijan</td>
+              <td>7 °C</td>
+            </tr>
+            <tr>
+              <td>Bahamas</td>
+              <td>16 °C</td>
+            </tr>
+            <tr>
+              <td>Bahrain</td>
+              <td>21 °C</td>
+            </tr>
+            <tr>
+              <td>Bangladesh</td>
+              <td>28 °C</td>
+            </tr>
+            <tr>
+              <td>Barbados</td>
+              <td>25 °C</td>
+            </tr>
+            <tr>
+              <td>Belarus</td>
+              <td>-4 °C</td>
+            </tr>
+            <tr>
+              <td>Belgium</td>
+              <td>4 °C</td>
+            </tr>
+            <tr>
+              <td>Belize</td>
+              <td>22 °C</td>
+            </tr>
+            <tr>
+              <td>Benin</td>
+              <td>30 °C</td>
+            </tr>
+            <tr>
+              <td>Bermuda</td>
+              <td>17 °C</td>
+            </tr>
+            <tr>
+              <td>Bhutan</td>
+              <td>7 °C</td>
+            </tr>
+            <tr>
+              <td>Bosnia-Herzegovina</td>
+              <td>-1 °C</td>
+            </tr>
+            <tr>
+              <td>Botswana</td>
+              <td>27 °C</td>
+            </tr>
+            <tr>
+              <td>Brazil</td>
+              <td>24 °C</td>
+            </tr>
+            <tr>
+              <td>British Virgin Islands</td>
+              <td>26 °C</td>
+            </tr>
+            <tr>
+              <td>Brunei</td>
+              <td>24 °C</td>
+            </tr>
+            <tr>
+              <td>Bulgaria</td>
+              <td>3 °C</td>
+            </tr>
+            <tr>
+              <td>Cabo Verde</td>
+              <td>21 °C</td>
+            </tr>
+            <tr>
+              <td>Cambodia</td>
+              <td>28 °C</td>
+            </tr>
+            <tr>
+              <td>Cameroon</td>
+              <td>28 °C</td>
+            </tr>
+            <tr>
+              <td>Canada</td>
+              <td>-6 °C</td>
+            </tr>
+            <tr>
+              <td>Cayman Islands</td>
+              <td>25 °C</td>
+            </tr>
+            <tr>
+              <td>Central African Republic</td>
+              <td>32 °C</td>
+            </tr>
+            <tr>
+              <td>Chad</td>
+              <td>32 °C</td>
+            </tr>
+            <tr>
+              <td>Chile</td>
+              <td>16 °C</td>
+            </tr>
+            <tr>
+              <td>China</td>
+              <td>1 °C</td>
+            </tr>
+            <tr>
+              <td>Colombia</td>
+              <td>13 °C</td>
+            </tr>
+            <tr>
+              <td>Comoros</td>
+              <td>27 °C</td>
+            </tr>
+            <tr>
+              <td>Congo</td>
+              <td>28 °C</td>
+            </tr>
+            <tr>
+              <td>Congo Dem. Rep.</td>
+              <td>28 °C</td>
+            </tr>
+            <tr>
+              <td>Cook Islands</td>
+              <td>27 °C</td>
+            </tr>
+            <tr>
+              <td>Costa Rica</td>
+              <td>21 °C</td>
+            </tr>
+            <tr>
+              <td>Cote d'Ivoire (Ivory Coast)</td>
+              <td>26 °C</td>
+            </tr>
+            <tr>
+              <td>Croatia</td>
+              <td>2 °C</td>
+            </tr>
+            <tr>
+              <td>Cuba</td>
+              <td>19 °C</td>
+            </tr>
+            <tr>
+              <td>Cyprus</td>
+              <td>21 °C</td>
+            </tr>
+            <tr>
+              <td>Cyprus</td>
+              <td>21 °C</td>
+            </tr>
+            <tr>
+              <td>Czechia</td>
+              <td>-2 °C</td>
+            </tr>
+            <tr>
+              <td>Denmark</td>
+              <td>4 °C</td>
+            </tr>
+            <tr>
+              <td>Dominica</td>
+              <td>26 °C</td>
+            </tr>
+            <tr>
+              <td>Dominican Republic</td>
+              <td>24 °C</td>
+            </tr>
+            <tr>
+              <td>Egypt</td>
+              <td>26 °C</td>
+            </tr>
+            <tr>
+              <td>El Salvador</td>
+              <td>22 °C</td>
+            </tr>
+            <tr>
+              <td>Equatorial Guinea</td>
+              <td>32 °C</td>
+            </tr>
+            <tr>
+              <td>Estonia</td>
+              <td>-2 °C</td>
+            </tr>
+            <tr>
+              <td>Falkland Islands</td>
+              <td>8 °C</td>
+            </tr>
+            <tr>
+              <td>Fiji</td>
+              <td>28 °C</td>
+            </tr>
+            <tr>
+              <td>Finland</td>
+              <td>-1 °C</td>
+            </tr>
+            <tr>
+              <td>France</td>
+              <td>2 °C</td>
+            </tr>
+            <tr>
+              <td>Gabon</td>
+              <td>30 °C</td>
+            </tr>
+            <tr>
+              <td>Gambia</td>
+              <td>25 °C</td>
+            </tr>
+            <tr>
+              <td>Georgia</td>
+              <td>11 °C</td>
+            </tr>
+            <tr>
+              <td>Germany</td>
+              <td>1 °C</td>
+            </tr>
+            <tr>
+              <td>Ghana</td>
+              <td>32 °C</td>
+            </tr>
+            <tr>
+              <td>Gibraltar</td>
+              <td>11 °C</td>
+            </tr>
+            <tr>
+              <td>Greece</td>
+              <td>20 °C</td>
+            </tr>
+            <tr>
+              <td>Greenland</td>
+              <td>-4 °C</td>
+            </tr>
+            <tr>
+              <td>Grenada</td>
+              <td>27 °C</td>
+            </tr>
+            <tr>
+              <td>Guatemala</td>
+              <td>13 °C</td>
+            </tr>
+            <tr>
+              <td>Guinea-Bissau</td>
+              <td>25 °C</td>
+            </tr>
+            <tr>
+              <td>Guyana</td>
+              <td>26 °C</td>
+            </tr>
+            <tr>
+              <td>Haiti</td>
+              <td>22 °C</td>
+            </tr>
+            <tr>
+              <td>Honduras</td>
+              <td>18 °C</td>
+            </tr>
+            <tr>
+              <td>Hungary</td>
+              <td>3 °C</td>
+            </tr>
+            <tr>
+              <td>Iceland</td>
+              <td>-3 °C</td>
+            </tr>
+            <tr>
+              <td>India</td>
+              <td>17 °C</td>
+            </tr>
+            <tr>
+              <td>Indonesia</td>
+              <td>30 °C</td>
+            </tr>
+            <tr>
+              <td>Iran</td>
+              <td>11 °C</td>
+            </tr>
+            <tr>
+              <td>Iraq</td>
+              <td>17 °C</td>
+            </tr>
+            <tr>
+              <td>Ireland</td>
+              <td>8 °C</td>
+            </tr>
+            <tr>
+              <td>Isle of Man</td>
+              <td>9 °C</td>
+            </tr>
+            <tr>
+              <td>Israel</td>
+              <td>26 °C</td>
+            </tr>
+            <tr>
+              <td>Italy</td>
+              <td>7 °C</td>
+            </tr>
+            <tr>
+              <td>Jamaica</td>
+              <td>25 °C</td>
+            </tr>
+            <tr>
+              <td>Japan</td>
+              <td>2 °C</td>
+            </tr>
+            <tr>
+              <td>Jordan</td>
+              <td>19 °C</td>
+            </tr>
+            <tr>
+              <td>Kazakhstan</td>
+              <td>-10 °C</td>
+            </tr>
+            <tr>
+              <td>Kosovo</td>
+              <td>2 °C</td>
+            </tr>
+            <tr>
+              <td>Kuwait</td>
+              <td>19 °C</td>
+            </tr>
+            <tr>
+              <td>Kyrgyzstan</td>
+              <td>10 °C</td>
+            </tr>
+            <tr>
+              <td>Laos</td>
+              <td>18 °C</td>
+            </tr>
+            <tr>
+              <td>Latvia</td>
+              <td>0 °C</td>
+            </tr>
+            <tr>
+              <td>Lebanon</td>
+              <td>22 °C</td>
+            </tr>
+            <tr>
+              <td>Lesotho</td>
+              <td>16 °C</td>
+            </tr>
+            <tr>
+              <td>Liberia</td>
+              <td>26 °C</td>
+            </tr>
+            <tr>
+              <td>Liechtenstein</td>
+              <td>-3 °C</td>
+            </tr>
+            <tr>
+              <td>Lithuania</td>
+              <td>-2 °C</td>
+            </tr>
+            <tr>
+              <td>Luxembourg</td>
+              <td>0 °C</td>
+            </tr>
+            <tr>
+              <td>Madagascar</td>
+              <td>30 °C</td>
+            </tr>
+            <tr>
+              <td>Malawi</td>
+              <td>22 °C</td>
+            </tr>
+            <tr>
+              <td>Malaysia</td>
+              <td>29 °C</td>
+            </tr>
+            <tr>
+              <td>Maldives</td>
+              <td>30 °C</td>
+            </tr>
+            <tr>
+              <td>Mali</td>
+              <td>28 °C</td>
+            </tr>
+            <tr>
+              <td>Malta</td>
+              <td>16 °C</td>
+            </tr>
+            <tr>
+              <td>Marshall Islands</td>
+              <td>28 °C</td>
+            </tr>
+            <tr>
+              <td>Mauritius</td>
+              <td>27 °C</td>
+            </tr>
+            <tr>
+              <td>Mexico</td>
+              <td>10 °C</td>
+            </tr>
+            <tr>
+              <td>Micronesia</td>
+              <td>28 °C</td>
+            </tr>
+            <tr>
+              <td>Moldova</td>
+              <td>2 °C</td>
+            </tr>
+            <tr>
+              <td>Monaco</td>
+              <td>9 °C</td>
+            </tr>
+            <tr>
+              <td>Mongolia</td>
+              <td>-25 °C</td>
+            </tr>
+            <tr>
+              <td>Montenegro</td>
+              <td>12 °C</td>
+            </tr>
+            <tr>
+              <td>Montserrat</td>
+              <td>25 °C</td>
+            </tr>
+            <tr>
+              <td>Morocco</td>
+              <td>12 °C</td>
+            </tr>
+            <tr>
+              <td>Mozambique</td>
+              <td>32 °C</td>
+            </tr>
+            <tr>
+              <td>Namibia</td>
+              <td>25 °C</td>
+            </tr>
+            <tr>
+              <td>Nepal</td>
+              <td>14 °C</td>
+            </tr>
+            <tr>
+              <td>Netherlands</td>
+              <td>6 °C</td>
+            </tr>
+            <tr>
+              <td>New Zealand</td>
+              <td>16 °C</td>
+            </tr>
+            <tr>
+              <td>Nicaragua</td>
+              <td>22 °C</td>
+            </tr>
+            <tr>
+              <td>Niger</td>
+              <td>33 °C</td>
+            </tr>
+            <tr>
+              <td>Niue</td>
+              <td>24 °C</td>
+            </tr>
+            <tr>
+              <td>North Korea</td>
+              <td>-6 °C</td>
+            </tr>
+            <tr>
+              <td>North Macedonia</td>
+              <td>5 °C</td>
+            </tr>
+            <tr>
+              <td>Norway</td>
+              <td>-6 °C</td>
+            </tr>
+            <tr>
+              <td>Oman</td>
+              <td>22 °C</td>
+            </tr>
+            <tr>
+              <td>Pakistan</td>
+              <td>10 °C</td>
+            </tr>
+            <tr>
+              <td>Palau</td>
+              <td>29 °C</td>
+            </tr>
+            <tr>
+              <td>Panama</td>
+              <td>25 °C</td>
+            </tr>
+            <tr>
+              <td>Papua New Guinea</td>
+              <td>26 °C</td>
+            </tr>
+            <tr>
+              <td>Paraguay</td>
+              <td>29 °C</td>
+            </tr>
+            <tr>
+              <td>Peru</td>
+              <td>20 °C</td>
+            </tr>
+            <tr>
+              <td>Philippines</td>
+              <td>27 °C</td>
+            </tr>
+            <tr>
+              <td>Poland</td>
+              <td>2 °C</td>
+            </tr>
+            <tr>
+              <td>Portugal</td>
+              <td>8 °C</td>
+            </tr>
+            <tr>
+              <td>Puerto Rico</td>
+              <td>24 °C</td>
+            </tr>
+            <tr>
+              <td>Qatar</td>
+              <td>22 °C</td>
+            </tr>
+            <tr>
+              <td>Réunion (French)</td>
+              <td>27 °C</td>
+            </tr>
+            <tr>
+              <td>Romania</td>
+              <td>0 °C</td>
+            </tr>
+            <tr>
+              <td>Russia</td>
+              <td>-8 °C</td>
+            </tr>
+            <tr>
+              <td>Saint Helena</td>
+              <td>20 °C</td>
+            </tr>
+            <tr>
+              <td>Saint Kitts and Nevis</td>
+              <td>24 °C</td>
+            </tr>
+            <tr>
+              <td>Saint Lucia</td>
+              <td>27 °C</td>
+            </tr>
+            <tr>
+              <td>Saint Vincent and Grenadines</td>
+              <td>27 °C</td>
+            </tr>
+            <tr>
+              <td>Samoa</td>
+              <td>26 °C</td>
+            </tr>
+            <tr>
+              <td>San Marino</td>
+              <td>2 °C</td>
+            </tr>
+            <tr>
+              <td>Saudi Arabia</td>
+              <td>19 °C</td>
+            </tr>
+            <tr>
+              <td>Senegal</td>
+              <td>21 °C</td>
+            </tr>
+            <tr>
+              <td>Serbia</td>
+              <td>0 °C</td>
+            </tr>
+            <tr>
+              <td>Seychelles</td>
+              <td>30 °C</td>
+            </tr>
+            <tr>
+              <td>Sierra Leone</td>
+              <td>28 °C</td>
+            </tr>
+            <tr>
+              <td>Singapore</td>
+              <td>27 °C</td>
+            </tr>
+            <tr>
+              <td>Slovakia</td>
+              <td>1 °C</td>
+            </tr>
+            <tr>
+              <td>Slovenia</td>
+              <td>0 °C</td>
+            </tr>
+            <tr>
+              <td>Solomon Islands</td>
+              <td>26 °C</td>
+            </tr>
+            <tr>
+              <td>Solomon Islands</td>
+              <td>26 °C</td>
+            </tr>
+            <tr>
+              <td>South Africa</td>
+              <td>25 °C</td>
+            </tr>
+            <tr>
+              <td>South Korea</td>
+              <td>-6 °C</td>
+            </tr>
+            <tr>
+              <td>Spain</td>
+              <td>2 °C</td>
+            </tr>
+            <tr>
+              <td>Sri Lanka</td>
+              <td>27 °C</td>
+            </tr>
+            <tr>
+              <td>Sudan</td>
+              <td>31 °C</td>
+            </tr>
+            <tr>
+              <td>Suriname</td>
+              <td>25 °C</td>
+            </tr>
+            <tr>
+              <td>Sweden</td>
+              <td>1 °C</td>
+            </tr>
+            <tr>
+              <td>Switzerland</td>
+              <td>-3 °C</td>
+            </tr>
+            <tr>
+              <td>Syria</td>
+              <td>19 °C</td>
+            </tr>
+            <tr>
+              <td>Taiwan</td>
+              <td>10 °C</td>
+            </tr>
+            <tr>
+              <td>Tajikistan</td>
+              <td>11 °C</td>
+            </tr>
+            <tr>
+              <td>Tanzania</td>
+              <td>25 °C</td>
+            </tr>
+            <tr>
+              <td>Thailand</td>
+              <td>30 °C</td>
+            </tr>
+            <tr>
+              <td>Togo</td>
+              <td>32 °C</td>
+            </tr>
+            <tr>
+              <td>Tonga</td>
+              <td>25 °C</td>
+            </tr>
+            <tr>
+              <td>Trinidad and Tobago</td>
+              <td>24 °C</td>
+            </tr>
+            <tr>
+              <td>Tunisia</td>
+              <td>17 °C</td>
+            </tr>
+            <tr>
+              <td>Turkey</td>
+              <td>13 °C</td>
+            </tr>
+            <tr>
+              <td>Turkmenistan</td>
+              <td>12 °C</td>
+            </tr>
+            <tr>
+              <td>Tuvalu</td>
+              <td>29 °C</td>
+            </tr>
+            <tr>
+              <td>Ukraine</td>
+              <td>-1 °C</td>
+            </tr>
+            <tr>
+              <td>United Arab Emirates</td>
+              <td>23 °C</td>
+            </tr>
+            <tr>
+              <td>United Kingdom</td>
+              <td>8 °C</td>
+            </tr>
+            <tr>
+              <td>Uruguay</td>
+              <td>22 °C</td>
+            </tr>
+            <tr>
+              <td>USA</td>
+              <td>0 °C</td>
+            </tr>
+            <tr>
+              <td>Uzbekistan</td>
+              <td>8 °C</td>
+            </tr>
+            <tr>
+              <td>Vanuatu</td>
+              <td>25 °C</td>
+            </tr>
+            <tr>
+              <td>Vatican City State</td>
+              <td>7 °C</td>
+            </tr>
+            <tr>
+              <td>Venezuela</td>
+              <td>26 °C</td>
+            </tr>
+            <tr>
+              <td>Vietnam</td>
+              <td>14 °C</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+    
+
+</body>
+
+</html>
+
+
+
